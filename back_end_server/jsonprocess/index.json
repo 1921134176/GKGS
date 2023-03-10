@@ -1,0 +1,2017 @@
+[
+  {
+    "id": "world",
+    "name": "World",
+    "geo": "world.json"
+  },
+  {
+    "id": "china",
+    "name": "China",
+    "geo": "china.json"
+  },
+  {
+    "id": "710000",
+    "name": "台湾",
+    "geo": "province/taiwan.json"
+  },
+  {
+    "id": "130000",
+    "name": "河北",
+    "geo": "province/hebei.json"
+  },
+  {
+    "id": "140000",
+    "name": "山西",
+    "geo": "province/shanxi.json"
+  },
+  {
+    "id": "150000",
+    "name": "内蒙古",
+    "geo": "province/neimenggu.json"
+  },
+  {
+    "id": "210000",
+    "name": "辽宁",
+    "geo": "province/liaoning.json"
+  },
+  {
+    "id": "220000",
+    "name": "吉林",
+    "geo": "province/jilin.json"
+  },
+  {
+    "id": "230000",
+    "name": "黑龙江",
+    "geo": "province/heilongjiang.json"
+  },
+  {
+    "id": "320000",
+    "name": "江苏",
+    "geo": "province/jiangsu.json"
+  },
+  {
+    "id": "330000",
+    "name": "浙江",
+    "geo": "province/zhejiang.json"
+  },
+  {
+    "id": "340000",
+    "name": "安徽",
+    "geo": "province/anhui.json"
+  },
+  {
+    "id": "350000",
+    "name": "福建",
+    "geo": "province/fujian.json"
+  },
+  {
+    "id": "360000",
+    "name": "江西",
+    "geo": "province/jiangxi.json"
+  },
+  {
+    "id": "370000",
+    "name": "山东",
+    "geo": "province/shandong.json"
+  },
+  {
+    "id": "410000",
+    "name": "河南",
+    "geo": "province/henan.json"
+  },
+  {
+    "id": "420000",
+    "name": "湖北",
+    "geo": "province/hubei.json"
+  },
+  {
+    "id": "430000",
+    "name": "湖南",
+    "geo": "province/hunan.json"
+  },
+  {
+    "id": "440000",
+    "name": "广东",
+    "geo": "province/guangdong.json"
+  },
+  {
+    "id": "450000",
+    "name": "广西",
+    "geo": "province/guangxi.json"
+  },
+  {
+    "id": "460000",
+    "name": "海南",
+    "geo": "province/hainan.json"
+  },
+  {
+    "id": "510000",
+    "name": "四川",
+    "geo": "province/sichuan.json"
+  },
+  {
+    "id": "520000",
+    "name": "贵州",
+    "geo": "province/guizhou.json"
+  },
+  {
+    "id": "530000",
+    "name": "云南",
+    "geo": "province/yunnan.json"
+  },
+  {
+    "id": "540000",
+    "name": "西藏",
+    "geo": "province/xizang.json"
+  },
+  {
+    "id": "610000",
+    "name": "陕西",
+    "geo": "province/shanxi1.json"
+  },
+  {
+    "id": "620000",
+    "name": "甘肃",
+    "geo": "province/gansu.json"
+  },
+  {
+    "id": "630000",
+    "name": "青海",
+    "geo": "province/qinghai.json"
+  },
+  {
+    "id": "640000",
+    "name": "宁夏",
+    "geo": "province/ningxia.json"
+  },
+  {
+    "id": "650000",
+    "name": "新疆",
+    "geo": "province/xinjiang.json"
+  },
+  {
+    "id": "110000",
+    "name": "北京",
+    "geo": "province/beijing.json"
+  },
+  {
+    "id": "120000",
+    "name": "天津",
+    "geo": "province/tianjin.json"
+  },
+  {
+    "id": "310000",
+    "name": "上海",
+    "geo": "province/shanghai.json"
+  },
+  {
+    "id": "500000",
+    "name": "重庆",
+    "geo": "province/chongqing.json"
+  },
+  {
+    "id": "810000",
+    "name": "香港",
+    "geo": "province/xianggang.json"
+  },
+  {
+    "id": "820000",
+    "name": "澳门",
+    "geo": "province/aomen.json"
+  },
+  {
+    "id": "340100",
+    "name": "合肥",
+    "geo": "city/340100.json"
+  },
+  {
+    "id": "340200",
+    "name": "芜湖",
+    "geo": "city/340200.json"
+  },
+  {
+    "id": "340300",
+    "name": "蚌埠",
+    "geo": "city/340300.json"
+  },
+  {
+    "id": "340400",
+    "name": "淮南",
+    "geo": "city/340400.json"
+  },
+  {
+    "id": "340500",
+    "name": "马鞍山",
+    "geo": "city/340500.json"
+  },
+  {
+    "id": "340600",
+    "name": "淮北",
+    "geo": "city/340600.json"
+  },
+  {
+    "id": "340700",
+    "name": "铜陵",
+    "geo": "city/340700.json"
+  },
+  {
+    "id": "340800",
+    "name": "安庆",
+    "geo": "city/340800.json"
+  },
+  {
+    "id": "341000",
+    "name": "黄山",
+    "geo": "city/341000.json"
+  },
+  {
+    "id": "341100",
+    "name": "滁州",
+    "geo": "city/341100.json"
+  },
+  {
+    "id": "341200",
+    "name": "阜阳",
+    "geo": "city/341200.json"
+  },
+  {
+    "id": "341300",
+    "name": "宿州",
+    "geo": "city/341300.json"
+  },
+  {
+    "id": "341500",
+    "name": "六安",
+    "geo": "city/341500.json"
+  },
+  {
+    "id": "341600",
+    "name": "亳州",
+    "geo": "city/341600.json"
+  },
+  {
+    "id": "341700",
+    "name": "池州",
+    "geo": "city/341700.json"
+  },
+  {
+    "id": "341800",
+    "name": "宣城",
+    "geo": "city/341800.json"
+  },
+  {
+    "id": "350100",
+    "name": "福州",
+    "geo": "city/350100.json"
+  },
+  {
+    "id": "350200",
+    "name": "厦门",
+    "geo": "city/350200.json"
+  },
+  {
+    "id": "350300",
+    "name": "莆田",
+    "geo": "city/350300.json"
+  },
+  {
+    "id": "350400",
+    "name": "三明",
+    "geo": "city/350400.json"
+  },
+  {
+    "id": "350500",
+    "name": "泉州",
+    "geo": "city/350500.json"
+  },
+  {
+    "id": "350600",
+    "name": "漳州",
+    "geo": "city/350600.json"
+  },
+  {
+    "id": "350700",
+    "name": "南平",
+    "geo": "city/350700.json"
+  },
+  {
+    "id": "350800",
+    "name": "龙岩",
+    "geo": "city/350800.json"
+  },
+  {
+    "id": "350900",
+    "name": "宁德",
+    "geo": "city/350900.json"
+  },
+  {
+    "id": "620100",
+    "name": "兰州",
+    "geo": "city/620100.json"
+  },
+  {
+    "id": "620200",
+    "name": "嘉峪关",
+    "geo": "city/620200.json"
+  },
+  {
+    "id": "620300",
+    "name": "金昌",
+    "geo": "city/620300.json"
+  },
+  {
+    "id": "620400",
+    "name": "白银",
+    "geo": "city/620400.json"
+  },
+  {
+    "id": "620500",
+    "name": "天水",
+    "geo": "city/620500.json"
+  },
+  {
+    "id": "620600",
+    "name": "武威",
+    "geo": "city/620600.json"
+  },
+  {
+    "id": "620700",
+    "name": "张掖",
+    "geo": "city/620700.json"
+  },
+  {
+    "id": "620800",
+    "name": "平凉",
+    "geo": "city/620800.json"
+  },
+  {
+    "id": "620900",
+    "name": "酒泉",
+    "geo": "city/620900.json"
+  },
+  {
+    "id": "621000",
+    "name": "庆阳",
+    "geo": "city/621000.json"
+  },
+  {
+    "id": "621100",
+    "name": "定西",
+    "geo": "city/621100.json"
+  },
+  {
+    "id": "621200",
+    "name": "陇南",
+    "geo": "city/621200.json"
+  },
+  {
+    "id": "622900",
+    "name": "临夏",
+    "geo": "city/622900.json"
+  },
+  {
+    "id": "623000",
+    "name": "甘南",
+    "geo": "city/623000.json"
+  },
+  {
+    "id": "440100",
+    "name": "广州",
+    "geo": "city/440100.json"
+  },
+  {
+    "id": "440200",
+    "name": "韶关",
+    "geo": "city/440200.json"
+  },
+  {
+    "id": "440300",
+    "name": "深圳",
+    "geo": "city/440300.json"
+  },
+  {
+    "id": "440400",
+    "name": "珠海",
+    "geo": "city/440400.json"
+  },
+  {
+    "id": "440500",
+    "name": "汕头",
+    "geo": "city/440500.json"
+  },
+  {
+    "id": "440600",
+    "name": "佛山",
+    "geo": "city/440600.json"
+  },
+  {
+    "id": "440700",
+    "name": "江门",
+    "geo": "city/440700.json"
+  },
+  {
+    "id": "440800",
+    "name": "湛江",
+    "geo": "city/440800.json"
+  },
+  {
+    "id": "440900",
+    "name": "茂名",
+    "geo": "city/440900.json"
+  },
+  {
+    "id": "441200",
+    "name": "肇庆",
+    "geo": "city/441200.json"
+  },
+  {
+    "id": "441300",
+    "name": "惠州",
+    "geo": "city/441300.json"
+  },
+  {
+    "id": "441400",
+    "name": "梅州",
+    "geo": "city/441400.json"
+  },
+  {
+    "id": "441500",
+    "name": "汕尾",
+    "geo": "city/441500.json"
+  },
+  {
+    "id": "441600",
+    "name": "河源",
+    "geo": "city/441600.json"
+  },
+  {
+    "id": "441700",
+    "name": "阳江",
+    "geo": "city/441700.json"
+  },
+  {
+    "id": "441800",
+    "name": "清远",
+    "geo": "city/441800.json"
+  },
+  {
+    "id": "441900",
+    "name": "东莞",
+    "geo": "city/441900.json"
+  },
+  {
+    "id": "442000",
+    "name": "中山",
+    "geo": "city/442000.json"
+  },
+  {
+    "id": "445100",
+    "name": "潮州",
+    "geo": "city/445100.json"
+  },
+  {
+    "id": "445200",
+    "name": "揭阳",
+    "geo": "city/445200.json"
+  },
+  {
+    "id": "445300",
+    "name": "云浮",
+    "geo": "city/445300.json"
+  },
+  {
+    "id": "450100",
+    "name": "南宁",
+    "geo": "city/450100.json"
+  },
+  {
+    "id": "450200",
+    "name": "柳州",
+    "geo": "city/450200.json"
+  },
+  {
+    "id": "450300",
+    "name": "桂林",
+    "geo": "city/450300.json"
+  },
+  {
+    "id": "450400",
+    "name": "梧州",
+    "geo": "city/450400.json"
+  },
+  {
+    "id": "450500",
+    "name": "北海",
+    "geo": "city/450500.json"
+  },
+  {
+    "id": "450600",
+    "name": "防城港",
+    "geo": "city/450600.json"
+  },
+  {
+    "id": "450700",
+    "name": "钦州",
+    "geo": "city/450700.json"
+  },
+  {
+    "id": "450800",
+    "name": "贵港",
+    "geo": "city/450800.json"
+  },
+  {
+    "id": "450900",
+    "name": "玉林",
+    "geo": "city/450900.json"
+  },
+  {
+    "id": "451000",
+    "name": "百色",
+    "geo": "city/451000.json"
+  },
+  {
+    "id": "451100",
+    "name": "贺州",
+    "geo": "city/451100.json"
+  },
+  {
+    "id": "451200",
+    "name": "河池",
+    "geo": "city/451200.json"
+  },
+  {
+    "id": "451300",
+    "name": "来宾",
+    "geo": "city/451300.json"
+  },
+  {
+    "id": "451400",
+    "name": "崇左",
+    "geo": "city/451400.json"
+  },
+  {
+    "id": "520100",
+    "name": "贵阳",
+    "geo": "city/520100.json"
+  },
+  {
+    "id": "520200",
+    "name": "六盘水",
+    "geo": "city/520200.json"
+  },
+  {
+    "id": "520300",
+    "name": "遵义",
+    "geo": "city/520300.json"
+  },
+  {
+    "id": "520400",
+    "name": "安顺",
+    "geo": "city/520400.json"
+  },
+  {
+    "id": "520600",
+    "name": "铜仁",
+    "geo": "city/520600.json"
+  },
+  {
+    "id": "522300",
+    "name": "黔西南",
+    "geo": "city/522300.json"
+  },
+  {
+    "id": "520500",
+    "name": "毕节",
+    "geo": "city/520500.json"
+  },
+  {
+    "id": "522600",
+    "name": "黔东南",
+    "geo": "city/522600.json"
+  },
+  {
+    "id": "522700",
+    "name": "黔南",
+    "geo": "city/522700.json"
+  },
+  {
+    "id": "460100",
+    "name": "海口",
+    "geo": "city/460100.json"
+  },
+  {
+    "id": "460200",
+    "name": "三亚",
+    "geo": "city/460200.json"
+  },
+  {
+    "id": "469001",
+    "name": "五指山",
+    "geo": "city/469001.json"
+  },
+  {
+    "id": "469002",
+    "name": "琼海",
+    "geo": "city/469002.json"
+  },
+  {
+    "id": "469003",
+    "name": "儋州",
+    "geo": "city/469003.json"
+  },
+  {
+    "id": "469005",
+    "name": "文昌",
+    "geo": "city/469005.json"
+  },
+  {
+    "id": "469006",
+    "name": "万宁",
+    "geo": "city/469006.json"
+  },
+  {
+    "id": "469007",
+    "name": "东方",
+    "geo": "city/469007.json"
+  },
+  {
+    "id": "469021",
+    "name": "定安县",
+    "geo": "city/469021.json"
+  },
+  {
+    "id": "469022",
+    "name": "屯昌县",
+    "geo": "city/469022.json"
+  },
+  {
+    "id": "469023",
+    "name": "澄迈县",
+    "geo": "city/469023.json"
+  },
+  {
+    "id": "469024",
+    "name": "临高县",
+    "geo": "city/469024.json"
+  },
+  {
+    "id": "469025",
+    "name": "白沙",
+    "geo": "city/469025.json"
+  },
+  {
+    "id": "469026",
+    "name": "昌江",
+    "geo": "city/469026.json"
+  },
+  {
+    "id": "469027",
+    "name": "乐东",
+    "geo": "city/469027.json"
+  },
+  {
+    "id": "469028",
+    "name": "陵水",
+    "geo": "city/469028.json"
+  },
+  {
+    "id": "469029",
+    "name": "保亭",
+    "geo": "city/469029.json"
+  },
+  {
+    "id": "469030",
+    "name": "琼中",
+    "geo": "city/469030.json"
+  },
+  {
+    "id": "130100",
+    "name": "石家庄",
+    "geo": "city/130100.json"
+  },
+  {
+    "id": "130200",
+    "name": "唐山",
+    "geo": "city/130200.json"
+  },
+  {
+    "id": "130300",
+    "name": "秦皇岛",
+    "geo": "city/130300.json"
+  },
+  {
+    "id": "130400",
+    "name": "邯郸",
+    "geo": "city/130400.json"
+  },
+  {
+    "id": "130500",
+    "name": "邢台",
+    "geo": "city/130500.json"
+  },
+  {
+    "id": "130600",
+    "name": "保定",
+    "geo": "city/130600.json"
+  },
+  {
+    "id": "130700",
+    "name": "张家口",
+    "geo": "city/130700.json"
+  },
+  {
+    "id": "130800",
+    "name": "承德",
+    "geo": "city/130800.json"
+  },
+  {
+    "id": "130900",
+    "name": "沧州",
+    "geo": "city/130900.json"
+  },
+  {
+    "id": "131000",
+    "name": "廊坊",
+    "geo": "city/131000.json"
+  },
+  {
+    "id": "131100",
+    "name": "衡水",
+    "geo": "city/131100.json"
+  },
+  {
+    "id": "230100",
+    "name": "哈尔滨",
+    "geo": "city/230100.json"
+  },
+  {
+    "id": "230200",
+    "name": "齐齐哈尔",
+    "geo": "city/230200.json"
+  },
+  {
+    "id": "230300",
+    "name": "鸡西",
+    "geo": "city/230300.json"
+  },
+  {
+    "id": "230400",
+    "name": "鹤岗",
+    "geo": "city/230400.json"
+  },
+  {
+    "id": "230500",
+    "name": "双鸭山",
+    "geo": "city/230500.json"
+  },
+  {
+    "id": "230600",
+    "name": "大庆",
+    "geo": "city/230600.json"
+  },
+  {
+    "id": "230700",
+    "name": "伊春",
+    "geo": "city/230700.json"
+  },
+  {
+    "id": "230800",
+    "name": "佳木斯",
+    "geo": "city/230800.json"
+  },
+  {
+    "id": "230900",
+    "name": "七台河",
+    "geo": "city/230900.json"
+  },
+  {
+    "id": "231000",
+    "name": "牡丹江",
+    "geo": "city/231000.json"
+  },
+  {
+    "id": "231100",
+    "name": "黑河",
+    "geo": "city/231100.json"
+  },
+  {
+    "id": "231200",
+    "name": "绥化",
+    "geo": "city/231200.json"
+  },
+  {
+    "id": "232700",
+    "name": "大兴安岭",
+    "geo": "city/232700.json"
+  },
+  {
+    "id": "410100",
+    "name": "郑州",
+    "geo": "city/410100.json"
+  },
+  {
+    "id": "410200",
+    "name": "开封",
+    "geo": "city/410200.json"
+  },
+  {
+    "id": "410300",
+    "name": "洛阳",
+    "geo": "city/410300.json"
+  },
+  {
+    "id": "410400",
+    "name": "平顶山",
+    "geo": "city/410400.json"
+  },
+  {
+    "id": "410500",
+    "name": "安阳",
+    "geo": "city/410500.json"
+  },
+  {
+    "id": "410600",
+    "name": "鹤壁",
+    "geo": "city/410600.json"
+  },
+  {
+    "id": "410700",
+    "name": "新乡",
+    "geo": "city/410700.json"
+  },
+  {
+    "id": "410800",
+    "name": "焦作",
+    "geo": "city/410800.json"
+  },
+  {
+    "id": "410900",
+    "name": "濮阳",
+    "geo": "city/410900.json"
+  },
+  {
+    "id": "411000",
+    "name": "许昌",
+    "geo": "city/411000.json"
+  },
+  {
+    "id": "411100",
+    "name": "漯河",
+    "geo": "city/411100.json"
+  },
+  {
+    "id": "411200",
+    "name": "三门峡",
+    "geo": "city/411200.json"
+  },
+  {
+    "id": "411300",
+    "name": "南阳",
+    "geo": "city/411300.json"
+  },
+  {
+    "id": "411400",
+    "name": "商丘",
+    "geo": "city/411400.json"
+  },
+  {
+    "id": "411500",
+    "name": "信阳",
+    "geo": "city/411500.json"
+  },
+  {
+    "id": "411600",
+    "name": "周口",
+    "geo": "city/411600.json"
+  },
+  {
+    "id": "411700",
+    "name": "驻马店",
+    "geo": "city/411700.json"
+  },
+  {
+    "id": "419001",
+    "name": "济源",
+    "geo": "city/419001.json"
+  },
+  {
+    "id": "420100",
+    "name": "武汉",
+    "geo": "city/420100.json"
+  },
+  {
+    "id": "420200",
+    "name": "黄石",
+    "geo": "city/420200.json"
+  },
+  {
+    "id": "420300",
+    "name": "十堰",
+    "geo": "city/420300.json"
+  },
+  {
+    "id": "420500",
+    "name": "宜昌",
+    "geo": "city/420500.json"
+  },
+  {
+    "id": "420600",
+    "name": "襄阳",
+    "geo": "city/420600.json"
+  },
+  {
+    "id": "420700",
+    "name": "鄂州",
+    "geo": "city/420700.json"
+  },
+  {
+    "id": "420800",
+    "name": "荆门",
+    "geo": "city/420800.json"
+  },
+  {
+    "id": "420900",
+    "name": "孝感",
+    "geo": "city/420900.json"
+  },
+  {
+    "id": "421000",
+    "name": "荆州",
+    "geo": "city/421000.json"
+  },
+  {
+    "id": "421100",
+    "name": "黄冈",
+    "geo": "city/421100.json"
+  },
+  {
+    "id": "421200",
+    "name": "咸宁",
+    "geo": "city/421200.json"
+  },
+  {
+    "id": "421300",
+    "name": "随州",
+    "geo": "city/421300.json"
+  },
+  {
+    "id": "422800",
+    "name": "恩施",
+    "geo": "city/422800.json"
+  },
+  {
+    "id": "429004",
+    "name": "仙桃",
+    "geo": "city/429004.json"
+  },
+  {
+    "id": "429005",
+    "name": "潜江",
+    "geo": "city/429005.json"
+  },
+  {
+    "id": "429006",
+    "name": "天门",
+    "geo": "city/429006.json"
+  },
+  {
+    "id": "429021",
+    "name": "神农架",
+    "geo": "city/429021.json"
+  },
+  {
+    "id": "430100",
+    "name": "长沙",
+    "geo": "city/430100.json"
+  },
+  {
+    "id": "430200",
+    "name": "株洲",
+    "geo": "city/430200.json"
+  },
+  {
+    "id": "430300",
+    "name": "湘潭",
+    "geo": "city/430300.json"
+  },
+  {
+    "id": "430400",
+    "name": "衡阳",
+    "geo": "city/430400.json"
+  },
+  {
+    "id": "430500",
+    "name": "邵阳",
+    "geo": "city/430500.json"
+  },
+  {
+    "id": "430600",
+    "name": "岳阳",
+    "geo": "city/430600.json"
+  },
+  {
+    "id": "430700",
+    "name": "常德",
+    "geo": "city/430700.json"
+  },
+  {
+    "id": "430800",
+    "name": "张家界",
+    "geo": "city/430800.json"
+  },
+  {
+    "id": "430900",
+    "name": "益阳",
+    "geo": "city/430900.json"
+  },
+  {
+    "id": "431000",
+    "name": "郴州",
+    "geo": "city/431000.json"
+  },
+  {
+    "id": "431100",
+    "name": "永州",
+    "geo": "city/431100.json"
+  },
+  {
+    "id": "431200",
+    "name": "怀化",
+    "geo": "city/431200.json"
+  },
+  {
+    "id": "431300",
+    "name": "娄底",
+    "geo": "city/431300.json"
+  },
+  {
+    "id": "433100",
+    "name": "湘西",
+    "geo": "city/433100.json"
+  },
+  {
+    "id": "320100",
+    "name": "南京",
+    "geo": "city/320100.json"
+  },
+  {
+    "id": "320200",
+    "name": "无锡",
+    "geo": "city/320200.json"
+  },
+  {
+    "id": "320300",
+    "name": "徐州",
+    "geo": "city/320300.json"
+  },
+  {
+    "id": "320400",
+    "name": "常州",
+    "geo": "city/320400.json"
+  },
+  {
+    "id": "320500",
+    "name": "苏州",
+    "geo": "city/320500.json"
+  },
+  {
+    "id": "320600",
+    "name": "南通",
+    "geo": "city/320600.json"
+  },
+  {
+    "id": "320700",
+    "name": "连云港",
+    "geo": "city/320700.json"
+  },
+  {
+    "id": "320800",
+    "name": "淮安",
+    "geo": "city/320800.json"
+  },
+  {
+    "id": "320900",
+    "name": "盐城",
+    "geo": "city/320900.json"
+  },
+  {
+    "id": "321000",
+    "name": "扬州",
+    "geo": "city/321000.json"
+  },
+  {
+    "id": "321100",
+    "name": "镇江",
+    "geo": "city/321100.json"
+  },
+  {
+    "id": "321200",
+    "name": "泰州",
+    "geo": "city/321200.json"
+  },
+  {
+    "id": "321300",
+    "name": "宿迁",
+    "geo": "city/321300.json"
+  },
+  {
+    "id": "360100",
+    "name": "南昌",
+    "geo": "city/360100.json"
+  },
+  {
+    "id": "360200",
+    "name": "景德镇",
+    "geo": "city/360200.json"
+  },
+  {
+    "id": "360300",
+    "name": "萍乡",
+    "geo": "city/360300.json"
+  },
+  {
+    "id": "360400",
+    "name": "九江",
+    "geo": "city/360400.json"
+  },
+  {
+    "id": "360500",
+    "name": "新余",
+    "geo": "city/360500.json"
+  },
+  {
+    "id": "360600",
+    "name": "鹰潭",
+    "geo": "city/360600.json"
+  },
+  {
+    "id": "360700",
+    "name": "赣州",
+    "geo": "city/360700.json"
+  },
+  {
+    "id": "360800",
+    "name": "吉安",
+    "geo": "city/360800.json"
+  },
+  {
+    "id": "360900",
+    "name": "宜春",
+    "geo": "city/360900.json"
+  },
+  {
+    "id": "361000",
+    "name": "抚州",
+    "geo": "city/361000.json"
+  },
+  {
+    "id": "361100",
+    "name": "上饶",
+    "geo": "city/361100.json"
+  },
+  {
+    "id": "220100",
+    "name": "长春",
+    "geo": "city/220100.json"
+  },
+  {
+    "id": "220200",
+    "name": "吉林",
+    "geo": "city/220200.json"
+  },
+  {
+    "id": "220300",
+    "name": "四平",
+    "geo": "city/220300.json"
+  },
+  {
+    "id": "220400",
+    "name": "辽源",
+    "geo": "city/220400.json"
+  },
+  {
+    "id": "220500",
+    "name": "通化",
+    "geo": "city/220500.json"
+  },
+  {
+    "id": "220600",
+    "name": "白山",
+    "geo": "city/220600.json"
+  },
+  {
+    "id": "220700",
+    "name": "松原",
+    "geo": "city/220700.json"
+  },
+  {
+    "id": "220800",
+    "name": "白城",
+    "geo": "city/220800.json"
+  },
+  {
+    "id": "222400",
+    "name": "延边",
+    "geo": "city/222400.json"
+  },
+  {
+    "id": "210100",
+    "name": "沈阳",
+    "geo": "city/210100.json"
+  },
+  {
+    "id": "210200",
+    "name": "大连",
+    "geo": "city/210200.json"
+  },
+  {
+    "id": "210300",
+    "name": "鞍山",
+    "geo": "city/210300.json"
+  },
+  {
+    "id": "210400",
+    "name": "抚顺",
+    "geo": "city/210400.json"
+  },
+  {
+    "id": "210500",
+    "name": "本溪",
+    "geo": "city/210500.json"
+  },
+  {
+    "id": "210600",
+    "name": "丹东",
+    "geo": "city/210600.json"
+  },
+  {
+    "id": "210700",
+    "name": "锦州",
+    "geo": "city/210700.json"
+  },
+  {
+    "id": "210800",
+    "name": "营口",
+    "geo": "city/210800.json"
+  },
+  {
+    "id": "210900",
+    "name": "阜新",
+    "geo": "city/210900.json"
+  },
+  {
+    "id": "211000",
+    "name": "辽阳",
+    "geo": "city/211000.json"
+  },
+  {
+    "id": "211100",
+    "name": "盘锦",
+    "geo": "city/211100.json"
+  },
+  {
+    "id": "211200",
+    "name": "铁岭",
+    "geo": "city/211200.json"
+  },
+  {
+    "id": "211300",
+    "name": "朝阳",
+    "geo": "city/211300.json"
+  },
+  {
+    "id": "211400",
+    "name": "葫芦岛",
+    "geo": "city/211400.json"
+  },
+  {
+    "id": "150100",
+    "name": "呼和浩特",
+    "geo": "city/150100.json"
+  },
+  {
+    "id": "150200",
+    "name": "包头",
+    "geo": "city/150200.json"
+  },
+  {
+    "id": "150300",
+    "name": "乌海",
+    "geo": "city/150300.json"
+  },
+  {
+    "id": "150400",
+    "name": "赤峰",
+    "geo": "city/150400.json"
+  },
+  {
+    "id": "150500",
+    "name": "通辽",
+    "geo": "city/150500.json"
+  },
+  {
+    "id": "150600",
+    "name": "鄂尔多斯",
+    "geo": "city/150600.json"
+  },
+  {
+    "id": "150700",
+    "name": "呼伦贝尔",
+    "geo": "city/150700.json"
+  },
+  {
+    "id": "150800",
+    "name": "巴彦淖尔",
+    "geo": "city/150800.json"
+  },
+  {
+    "id": "150900",
+    "name": "乌兰察布",
+    "geo": "city/150900.json"
+  },
+  {
+    "id": "152200",
+    "name": "兴安盟",
+    "geo": "city/152200.json"
+  },
+  {
+    "id": "152500",
+    "name": "锡林郭勒盟",
+    "geo": "city/152500.json"
+  },
+  {
+    "id": "152900",
+    "name": "阿拉善盟",
+    "geo": "city/152900.json"
+  },
+  {
+    "id": "640100",
+    "name": "银川",
+    "geo": "city/640100.json"
+  },
+  {
+    "id": "640200",
+    "name": "石嘴山",
+    "geo": "city/640200.json"
+  },
+  {
+    "id": "640300",
+    "name": "吴忠",
+    "geo": "city/640300.json"
+  },
+  {
+    "id": "640400",
+    "name": "固原",
+    "geo": "city/640400.json"
+  },
+  {
+    "id": "640500",
+    "name": "中卫",
+    "geo": "city/640500.json"
+  },
+  {
+    "id": "630100",
+    "name": "西宁",
+    "geo": "city/630100.json"
+  },
+  {
+    "id": "630200",
+    "name": "海东",
+    "geo": "city/630200.json"
+  },
+  {
+    "id": "632200",
+    "name": "海北",
+    "geo": "city/632200.json"
+  },
+  {
+    "id": "632300",
+    "name": "黄南",
+    "geo": "city/632300.json"
+  },
+  {
+    "id": "632500",
+    "name": "海南",
+    "geo": "city/632500.json"
+  },
+  {
+    "id": "632600",
+    "name": "果洛",
+    "geo": "city/632600.json"
+  },
+  {
+    "id": "632700",
+    "name": "玉树",
+    "geo": "city/632700.json"
+  },
+  {
+    "id": "632800",
+    "name": "海西",
+    "geo": "city/632800.json"
+  },
+  {
+    "id": "370100",
+    "name": "济南",
+    "geo": "city/370100.json"
+  },
+  {
+    "id": "370200",
+    "name": "青岛",
+    "geo": "city/370200.json"
+  },
+  {
+    "id": "370300",
+    "name": "淄博",
+    "geo": "city/370300.json"
+  },
+  {
+    "id": "370400",
+    "name": "枣庄",
+    "geo": "city/370400.json"
+  },
+  {
+    "id": "370500",
+    "name": "东营",
+    "geo": "city/370500.json"
+  },
+  {
+    "id": "370600",
+    "name": "烟台",
+    "geo": "city/370600.json"
+  },
+  {
+    "id": "370700",
+    "name": "潍坊",
+    "geo": "city/370700.json"
+  },
+  {
+    "id": "370800",
+    "name": "济宁",
+    "geo": "city/370800.json"
+  },
+  {
+    "id": "370900",
+    "name": "泰安",
+    "geo": "city/370900.json"
+  },
+  {
+    "id": "371000",
+    "name": "威海",
+    "geo": "city/371000.json"
+  },
+  {
+    "id": "371100",
+    "name": "日照",
+    "geo": "city/371100.json"
+  },
+  {
+    "id": "371200",
+    "name": "莱芜",
+    "geo": "city/371200.json"
+  },
+  {
+    "id": "371300",
+    "name": "临沂",
+    "geo": "city/371300.json"
+  },
+  {
+    "id": "371400",
+    "name": "德州",
+    "geo": "city/371400.json"
+  },
+  {
+    "id": "371500",
+    "name": "聊城",
+    "geo": "city/371500.json"
+  },
+  {
+    "id": "371600",
+    "name": "滨州",
+    "geo": "city/371600.json"
+  },
+  {
+    "id": "371700",
+    "name": "菏泽",
+    "geo": "city/371700.json"
+  },
+  {
+    "id": "140100",
+    "name": "太原",
+    "geo": "city/140100.json"
+  },
+  {
+    "id": "140200",
+    "name": "大同",
+    "geo": "city/140200.json"
+  },
+  {
+    "id": "140300",
+    "name": "阳泉",
+    "geo": "city/140300.json"
+  },
+  {
+    "id": "140400",
+    "name": "长治",
+    "geo": "city/140400.json"
+  },
+  {
+    "id": "140500",
+    "name": "晋城",
+    "geo": "city/140500.json"
+  },
+  {
+    "id": "140600",
+    "name": "朔州",
+    "geo": "city/140600.json"
+  },
+  {
+    "id": "140700",
+    "name": "晋中",
+    "geo": "city/140700.json"
+  },
+  {
+    "id": "140800",
+    "name": "运城",
+    "geo": "city/140800.json"
+  },
+  {
+    "id": "140900",
+    "name": "忻州",
+    "geo": "city/140900.json"
+  },
+  {
+    "id": "141000",
+    "name": "临汾",
+    "geo": "city/141000.json"
+  },
+  {
+    "id": "141100",
+    "name": "吕梁",
+    "geo": "city/141100.json"
+  },
+  {
+    "id": "610100",
+    "name": "西安",
+    "geo": "city/610100.json"
+  },
+  {
+    "id": "610200",
+    "name": "铜川",
+    "geo": "city/610200.json"
+  },
+  {
+    "id": "610300",
+    "name": "宝鸡",
+    "geo": "city/610300.json"
+  },
+  {
+    "id": "610400",
+    "name": "咸阳",
+    "geo": "city/610400.json"
+  },
+  {
+    "id": "610500",
+    "name": "渭南",
+    "geo": "city/610500.json"
+  },
+  {
+    "id": "610600",
+    "name": "延安",
+    "geo": "city/610600.json"
+  },
+  {
+    "id": "610700",
+    "name": "汉中",
+    "geo": "city/610700.json"
+  },
+  {
+    "id": "610800",
+    "name": "榆林",
+    "geo": "city/610800.json"
+  },
+  {
+    "id": "610900",
+    "name": "安康",
+    "geo": "city/610900.json"
+  },
+  {
+    "id": "611000",
+    "name": "商洛",
+    "geo": "city/611000.json"
+  },
+  {
+    "id": "510100",
+    "name": "成都",
+    "geo": "city/510100.json"
+  },
+  {
+    "id": "510300",
+    "name": "自贡",
+    "geo": "city/510300.json"
+  },
+  {
+    "id": "510400",
+    "name": "攀枝花",
+    "geo": "city/510400.json"
+  },
+  {
+    "id": "510500",
+    "name": "泸州",
+    "geo": "city/510500.json"
+  },
+  {
+    "id": "510600",
+    "name": "德阳",
+    "geo": "city/510600.json"
+  },
+  {
+    "id": "510700",
+    "name": "绵阳",
+    "geo": "city/510700.json"
+  },
+  {
+    "id": "510800",
+    "name": "广元",
+    "geo": "city/510800.json"
+  },
+  {
+    "id": "510900",
+    "name": "遂宁",
+    "geo": "city/510900.json"
+  },
+  {
+    "id": "511000",
+    "name": "内江",
+    "geo": "city/511000.json"
+  },
+  {
+    "id": "511100",
+    "name": "乐山",
+    "geo": "city/511100.json"
+  },
+  {
+    "id": "511300",
+    "name": "南充",
+    "geo": "city/511300.json"
+  },
+  {
+    "id": "511400",
+    "name": "眉山",
+    "geo": "city/511400.json"
+  },
+  {
+    "id": "511500",
+    "name": "宜宾",
+    "geo": "city/511500.json"
+  },
+  {
+    "id": "511600",
+    "name": "广安",
+    "geo": "city/511600.json"
+  },
+  {
+    "id": "511700",
+    "name": "达州",
+    "geo": "city/511700.json"
+  },
+  {
+    "id": "511800",
+    "name": "雅安",
+    "geo": "city/511800.json"
+  },
+  {
+    "id": "511900",
+    "name": "巴中",
+    "geo": "city/511900.json"
+  },
+  {
+    "id": "512000",
+    "name": "资阳",
+    "geo": "city/512000.json"
+  },
+  {
+    "id": "513200",
+    "name": "阿坝",
+    "geo": "city/513200.json"
+  },
+  {
+    "id": "513300",
+    "name": "甘孜",
+    "geo": "city/513300.json"
+  },
+  {
+    "id": "513400",
+    "name": "凉山",
+    "geo": "city/513400.json"
+  },
+  {
+    "id": "650100",
+    "name": "乌鲁木齐",
+    "geo": "city/650100.json"
+  },
+  {
+    "id": "650200",
+    "name": "克拉玛依",
+    "geo": "city/650200.json"
+  },
+  {
+    "id": "652100",
+    "name": "吐鲁番",
+    "geo": "city/652100.json"
+  },
+  {
+    "id": "652200",
+    "name": "哈密",
+    "geo": "city/652200.json"
+  },
+  {
+    "id": "652300",
+    "name": "昌吉",
+    "geo": "city/652300.json"
+  },
+  {
+    "id": "652700",
+    "name": "博尔塔拉",
+    "geo": "city/652700.json"
+  },
+  {
+    "id": "652800",
+    "name": "巴音郭楞",
+    "geo": "city/652800.json"
+  },
+  {
+    "id": "652900",
+    "name": "阿克苏",
+    "geo": "city/652900.json"
+  },
+  {
+    "id": "653000",
+    "name": "克孜勒苏",
+    "geo": "city/653000.json"
+  },
+  {
+    "id": "653100",
+    "name": "喀什",
+    "geo": "city/653100.json"
+  },
+  {
+    "id": "653200",
+    "name": "和田",
+    "geo": "city/653200.json"
+  },
+  {
+    "id": "654000",
+    "name": "伊犁",
+    "geo": "city/654000.json"
+  },
+  {
+    "id": "654200",
+    "name": "塔城",
+    "geo": "city/654200.json"
+  },
+  {
+    "id": "654300",
+    "name": "阿勒泰",
+    "geo": "city/654300.json"
+  },
+  {
+    "id": "659001",
+    "name": "石河子",
+    "geo": "city/659001.json"
+  },
+  {
+    "id": "659002",
+    "name": "阿拉尔",
+    "geo": "city/659002.json"
+  },
+  {
+    "id": "659003",
+    "name": "图木舒克",
+    "geo": "city/659003.json"
+  },
+  {
+    "id": "659004",
+    "name": "五家渠",
+    "geo": "city/659004.json"
+  },
+  {
+    "id": "659005",
+    "name": "北屯",
+    "geo": "city/659005.json"
+  },
+  {
+    "id": "659006",
+    "name": "铁门关",
+    "geo": "city/659006.json"
+  },
+  {
+    "id": "659007",
+    "name": "双河",
+    "geo": "city/659007.json"
+  },
+  {
+    "id": "540100",
+    "name": "拉萨",
+    "geo": "city/540100.json"
+  },
+  {
+    "id": "540300",
+    "name": "昌都",
+    "geo": "city/540300.json"
+  },
+  {
+    "id": "542200",
+    "name": "山南",
+    "geo": "city/542200.json"
+  },
+  {
+    "id": "540200",
+    "name": "日喀则",
+    "geo": "city/540200.json"
+  },
+  {
+    "id": "542400",
+    "name": "那曲",
+    "geo": "city/542400.json"
+  },
+  {
+    "id": "542500",
+    "name": "阿里",
+    "geo": "city/542500.json"
+  },
+  {
+    "id": "542600",
+    "name": "林芝",
+    "geo": "city/542600.json"
+  },
+  {
+    "id": "530100",
+    "name": "昆明",
+    "geo": "city/530100.json"
+  },
+  {
+    "id": "530300",
+    "name": "曲靖",
+    "geo": "city/530300.json"
+  },
+  {
+    "id": "530400",
+    "name": "玉溪",
+    "geo": "city/530400.json"
+  },
+  {
+    "id": "530500",
+    "name": "保山",
+    "geo": "city/530500.json"
+  },
+  {
+    "id": "530600",
+    "name": "昭通",
+    "geo": "city/530600.json"
+  },
+  {
+    "id": "530700",
+    "name": "丽江",
+    "geo": "city/530700.json"
+  },
+  {
+    "id": "530800",
+    "name": "普洱",
+    "geo": "city/530800.json"
+  },
+  {
+    "id": "530900",
+    "name": "临沧",
+    "geo": "city/530900.json"
+  },
+  {
+    "id": "532300",
+    "name": "楚雄",
+    "geo": "city/532300.json"
+  },
+  {
+    "id": "532500",
+    "name": "红河",
+    "geo": "city/532500.json"
+  },
+  {
+    "id": "532600",
+    "name": "文山",
+    "geo": "city/532600.json"
+  },
+  {
+    "id": "532800",
+    "name": "西双版纳",
+    "geo": "city/532800.json"
+  },
+  {
+    "id": "532900",
+    "name": "大理",
+    "geo": "city/532900.json"
+  },
+  {
+    "id": "533100",
+    "name": "德宏",
+    "geo": "city/533100.json"
+  },
+  {
+    "id": "533300",
+    "name": "怒江",
+    "geo": "city/533300.json"
+  },
+  {
+    "id": "533400",
+    "name": "迪庆",
+    "geo": "city/533400.json"
+  },
+  {
+    "id": "330100",
+    "name": "杭州",
+    "geo": "city/330100.json"
+  },
+  {
+    "id": "330200",
+    "name": "宁波",
+    "geo": "city/330200.json"
+  },
+  {
+    "id": "330300",
+    "name": "温州",
+    "geo": "city/330300.json"
+  },
+  {
+    "id": "330400",
+    "name": "嘉兴",
+    "geo": "city/330400.json"
+  },
+  {
+    "id": "330500",
+    "name": "湖州",
+    "geo": "city/330500.json"
+  },
+  {
+    "id": "330600",
+    "name": "绍兴",
+    "geo": "city/330600.json"
+  },
+  {
+    "id": "330700",
+    "name": "金华",
+    "geo": "city/330700.json"
+  },
+  {
+    "id": "330800",
+    "name": "衢州",
+    "geo": "city/330800.json"
+  },
+  {
+    "id": "330900",
+    "name": "舟山",
+    "geo": "city/330900.json"
+  },
+  {
+    "id": "331000",
+    "name": "台州",
+    "geo": "city/331000.json"
+  },
+  {
+    "id": "331100",
+    "name": "丽水",
+    "geo": "city/331100.json"
+  },
+  {
+    "id": "710000",
+    "name": "台湾",
+    "geo": "city/710000.json"
+  },
+  {
+    "id": "110000",
+    "name": "北京",
+    "geo": "city/110000.json"
+  },
+  {
+    "id": "120000",
+    "name": "天津",
+    "geo": "city/120000.json"
+  },
+  {
+    "id": "310000",
+    "name": "上海",
+    "geo": "city/310000.json"
+  },
+  {
+    "id": "500000",
+    "name": "重庆",
+    "geo": "city/500000.json"
+  },
+  {
+    "id": "810000",
+    "name": "香港",
+    "geo": "city/810000.json"
+  },
+  {
+    "id": "820000",
+    "name": "澳门",
+    "geo": "city/820000.json"
+  }
+]

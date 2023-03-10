@@ -1,0 +1,133 @@
+{
+  "name": "my-web",
+  "version": "1.2.6",
+  "description": "前端项目工程模板",
+  "private": true,
+  "sideEffects": [
+    "*.scss",
+    "*.css",
+    "*.vue",
+    "**/*/.vuepress/*",
+    "**/*/config.js",
+    "ui/lib/icons/*.js",
+    "ui/lib/charts/themes/*.js",
+    "echarts/lib/**/*.js"
+  ],
+  "scripts": {
+    "install": "node install",
+    "coder": "my coder",
+    "theme": "my theme",
+    "ready": "my fix && my ready",
+    "route": "my route",
+    "dev": "npm run ready && concurrently \"npm run serve -- --open\" \"npm run route watch\"",
+    "serve": "vue-cli-service serve",
+    "build": "npm run ready -- --force && npm run route build && npm run theme prod  && vue-cli-service build",
+    "preview": "my preview",
+    "start": "my start",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "app": "my app",
+    "page": "my page",
+    "bridge": "my bridge",
+    "release": "npm run build && npm run app build"
+  },
+  "dependencies": {
+    "@xdh/my": "^4.2.5",
+    "whatwg-fetch": "^3.5.0"
+  },
+  "devDependencies": {
+    "@ant-design/colors": "^5.0.1",
+    "@vue/cli-plugin-babel": "^4.5.9",
+    "@vue/cli-plugin-eslint": "^4.5.9",
+    "@vue/cli-plugin-router": "^4.5.9",
+    "@vue/cli-plugin-unit-jest": "^4.5.9",
+    "@vue/cli-plugin-vuex": "^4.5.9",
+    "@vue/cli-service": "^4.5.9",
+    "@vue/eslint-config-standard": "^6.0.0",
+    "@vue/test-utils": "^1.1.2",
+    "autodll-webpack-plugin": "^0.4.2",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-component": "^1.1.1",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.3.0",
+    "fibers": "^5.0.0",
+    "jsdoc": "^3.6.5",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.7.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ],
+    "rules": {
+      "indent": 0,
+      "vue/script-indent": 0,
+      "vue/require-prop-type-constructor": 0,
+      "vue/no-use-v-if-with-v-for": 0,
+      "no-console": 0,
+      "no-trailing-spaces": 0,
+      "no-multiple-empty-lines": 0,
+      "no-extra-boolean-cast": 0,
+      "valid-jsdoc": 0,
+      "one-var": 0,
+      "semi": 0,
+      "no-new": 0,
+      "no-extra-semi": 0,
+      "keyword-spacing": 0,
+      "space-before-function-paren": 0,
+      "arrow-parens": 0,
+      "generator-star-spacing": 0,
+      "no-mixed-operators": 0,
+      "padded-blocks": 0,
+      "eol-last": 0,
+      "object-curly-spacing": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "eslintIgnore": [],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest"
+  },
+  "typings": "node_modules/@xdh/my/types/index.d.ts",
+  "install": {
+    "type": "git",
+    "branch": "master",
+    "repository": "https://gitee.com/newgateway/node_modules.git"
+  },
+  "apps": {}
+}
