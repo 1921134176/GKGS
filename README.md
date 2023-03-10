@@ -10,7 +10,7 @@ GKGS就是在这样的背景下所诞生的想法，研究希望构建一个具�
 
 ## 前端
 
-**前端工具：**Nodejs14、Vue2.9.6、Echarts、ElementUI、MyWebUI等
+**前端工具：** Nodejs14、Vue2.9.6、Echarts、ElementUI、MyWebUI等
 
 **主要页面：**
 
@@ -59,7 +59,7 @@ npm run serve
 
 ## 后端
 
-**后端工具：**python3.8、flask2.0.3、py2neo、geopandas0.9.0等
+**后端工具：** python3.8、flask2.0.3、py2neo、geopandas0.9.0等
 
 **安装与运行：**
 
@@ -77,4 +77,4 @@ python main.py
 
 ## 联系
 
-**Email：**1921134176@qq.com
+**Email：** 1921134176@qq.com
