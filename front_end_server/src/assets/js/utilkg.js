@@ -3,6 +3,17 @@ export const options1 = {
     text: ''
   },
   tooltip: {},
+  toolbox: {
+    show: true,
+    feature: {
+      restore: {
+        show: true
+      },
+      saveAsImage: {
+        show: true
+      }
+    }
+  },
   animationDurationUpdate: 1500,
   animationEasingUpdate: 'quinticInOut',
   label: {
@@ -103,6 +114,17 @@ export const options2 = {
       return x.data.des;
   }
   },
+  toolbox: {
+    show: true,
+    feature: {
+      restore: {
+        show: true
+      },
+      saveAsImage: {
+        show: true
+      }
+    }
+  },
   animationDurationUpdate: 1500,
   animationEasingUpdate: 'quinticInOut',
   label: {
@@ -202,6 +224,18 @@ export const options3 = {
     formatter: function(x) {
       return x.data.des;
   }
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      restore: {
+        show: true
+      },
+      saveAsImage: {
+        show: true
+      }
+    },
+    left: '5%'
   },
   animationDurationUpdate: 1500,
   animationEasingUpdate: 'quinticInOut',
@@ -831,6 +865,217 @@ export const kgoptions2 = {
           value: '同学'
         }
       ]
+    }
+  ]
+};
+
+export const optionsKgCompute = {
+  title: {
+    text: ''
+  },
+  tooltip: {
+    formatter: function(x) {
+      return x.data.des;
+  }
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      restore: {
+        show: true
+      },
+      saveAsImage: {
+        show: true
+      }
+    }
+  },
+  animationDurationUpdate: 1500,
+  animationEasingUpdate: 'quinticInOut',
+  label: {
+    normal: {
+      show: true,
+      textStyle: {
+        fontSize: 12
+      }
+    }
+  },
+  legend: {
+    show: true,
+    data: ['Country', 'Province', 'City', 'District'],
+    textStyle: {
+      color: '#000'
+    },
+    icon: 'circle',
+    type: 'scroll',
+    orient: 'vertical',
+    left: 'auto',
+    top: 'auto',
+    bottom: 'auto',
+    itemWidth: 10,
+    itemHeight: 10
+  },
+  series: [
+    {
+      type: 'graph',
+      layout: 'force',
+      symbolSize: 45,
+      focusNodeAdjacency: false, // 是否在鼠标移到节点上的时候突出显示节点以及节点的边和邻接节点。
+      roam: true, // 是否开启鼠标缩放和平移漫游
+      draggable: true, // 是否可拖拽
+      label: {
+        show: true,
+        fontSize: 12
+      },
+      force: {
+        repulsion: 400,
+        friction: 0.2
+      },
+      edgeSymbol: ['circle', 'arrow'], // 设置边两端的形状
+      edgeSymbolSize: [1, 10],
+      edgeLabel: {
+        normal: {
+          show: true,
+          textStyle: {
+            fontSize: 10
+          },
+          formatter: '{c}'
+        }
+      },
+      lineStyle: {
+        normal: {
+          opacity: 0.9,
+          width: 1,
+          curveness: 0
+        }
+      },
+      categories: [
+        {
+          name: 'Country'
+        },
+        {
+          name: 'Province'
+        },
+        {
+          name: 'City'
+        },
+        {
+          name: 'District'
+        }
+      ],
+      data: null,
+      links: null
+    }
+  ]
+};
+
+export const optionsErrorKg = {
+  title: {
+    text: ''
+  },
+  tooltip: {
+    formatter: function(x) {
+      return x.data.des;
+  }
+  },
+  toolbox: {
+    show: true,
+    feature: {
+      restore: {
+        show: true
+      },
+      saveAsImage: {
+        show: true
+      }
+    }
+  },
+  animationDurationUpdate: 1500,
+  animationEasingUpdate: 'quinticInOut',
+  label: {
+    normal: {
+      show: true,
+      textStyle: {
+        fontSize: 12
+      }
+    }
+  },
+  legend: {
+    show: true,
+    data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy'],
+    textStyle: {
+      color: '#000'
+    },
+    icon: 'circle',
+    type: 'scroll',
+    orient: 'vertical',
+    left: 'auto',
+    top: 'auto',
+    bottom: 'auto',
+    itemWidth: 10,
+    itemHeight: 10
+  },
+  series: [
+    {
+      type: 'graph',
+      layout: 'force',
+      symbolSize: 45,
+      focusNodeAdjacency: false, // 是否在鼠标移到节点上的时候突出显示节点以及节点的边和邻接节点。
+      roam: true, // 是否开启鼠标缩放和平移漫游
+      draggable: true, // 是否可拖拽
+      label: {
+        show: true,
+        fontSize: 12
+      },
+      force: {
+        repulsion: 1000,
+        friction: 0.2,
+        gravity: 0.1
+      },
+      edgeSymbol: ['circle', 'arrow'], // 设置边两端的形状
+      edgeSymbolSize: [1, 10],
+      edgeLabel: {
+        normal: {
+          show: true,
+          textStyle: {
+            fontSize: 10
+          },
+          formatter: '{c}'
+        }
+      },
+      lineStyle: {
+        normal: {
+          opacity: 0.9,
+          width: 1,
+          curveness: 0
+        }
+      },
+      categories: [
+        {
+          name: 'Country'
+        },
+        {
+          name: 'Province'
+        },
+        {
+          name: 'City'
+        },
+        {
+          name: 'District'
+        },
+        {
+          name: 'Street'
+        },
+        {
+          name: 'Region'
+        },
+        {
+          name: 'Statistics'
+        },
+        {
+          name: 'Proxy'
+        }
+      ],
+      data: null,
+      links: null
     }
   ]
 };

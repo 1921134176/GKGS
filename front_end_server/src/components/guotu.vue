@@ -45,27 +45,229 @@
         <el-col class="box" :span="8">
             <my-panel title="知识图谱" theme="flag" shadow="always" icon="el-icon-menu" fit>
               <kgecharts :options="kgoptions1" :width="kgwidth" :height="kgheight" @clickNode="clickNode"></kgecharts>
+            </my-panel>
+        </el-col>
+        <el-col class="box" :span="8">
+            <my-panel title="数据挖掘" theme="flag" shadow="always" icon="el-icon-menu" fit>
+              <kgecharts :options="kgoptions2" :width="kgwidth" :height="kgheight" @clickNode="clickNode2"></kgecharts>
               <template v-slot:handle>
                 <el-button-group>
-                  <el-button icon="el-icon-edit"  size="mini"></el-button>
-                  <el-button icon="el-icon-share"  size="mini"></el-button>
-                  <el-button icon="el-icon-delete" size="mini"></el-button>
-              </el-button-group>
+                  <el-popover
+                    placement="bottom"
+                    width="150"
+                    trigger="hover"
+                    content="查看影像">
+                    <el-button slot="reference" icon="el-icon-picture"  size="mini" @click="productImgShow"></el-button>
+                  </el-popover>
+                  <el-popover
+                    placement="bottom"
+                    width="150"
+                    trigger="hover"
+                    content="异常检测">
+                    <el-button slot="reference" icon="el-icon-warning" size="mini" @click="kgErrorDialogShow"></el-button>
+                  </el-popover>
+                </el-button-group>
               </template>
             </my-panel>
         </el-col>
         <el-col class="box" :span="8">
-            <my-panel title="数据挖掘" theme="flag" shadow="always" fit>
-              <kgecharts :options="kgoptions2" :width="kgwidth" :height="kgheight" @clickNode="clickNode2"></kgecharts>
-            </my-panel>
-        </el-col>
-        <el-col class="box" :span="8">
-            <my-panel title="知识卡片" theme="flag" shadow="always" fit>
+            <my-panel title="知识卡片" theme="flag" shadow="always" icon="el-icon-menu" fit>
                 <my-key-val-list :column="nodecolumn" :data="nodedata" border :columns="1"> </my-key-val-list>
             </my-panel>
         </el-col>
       </el-row>
     </my-map-drawer>
+    <el-dialog :title="dialogTitle" top="2vh" :visible.sync="dialogProductImgVisible">
+      <el-row>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[0]"
+            :fit="imageFit"
+            @click="downImg(0)"
+            @error="imageLoadError"
+            @load="imageLoadSuccess">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-1985
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[1]"
+            :fit="imageFit"
+            @click="downImg(1)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-1990
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[2]"
+            :fit="imageFit"
+            @click="downImg(2)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-1995
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[3]"
+            :fit="imageFit"
+            @click="downImg(3)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-2000
+              </span>
+            </div>
+          </div>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[4]"
+            :fit="imageFit"
+            @click="downImg(4)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-2005
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[5]"
+            :fit="imageFit"
+            @click="downImg(5)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-2010
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+         <div>
+            <el-image
+            :src="imageSrcList[6]"
+            :fit="imageFit"
+            @click="downImg(6)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-2015
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[7]"
+            :fit="imageFit"
+            @click="downImg(7)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GLC_FCS30-2020
+              </span>
+            </div>
+          </div>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[8]"
+            :fit="imageFit"
+            @click="downImg(8)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GlobaLand30_2000
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[9]"
+            :fit="imageFit"
+            @click="downImg(9)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GlobaLand30_2010
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[10]"
+            :fit="imageFit"
+            @click="downImg(10)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                GlobaLand30_2020
+              </span>
+            </div>
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div>
+            <el-image
+            :src="imageSrcList[11]"
+            :fit="imageFit"
+            @click="downImg(11)">
+            </el-image>
+            <div style="margin: 0 auto; text-align: center ">
+              <span style="font-size: 14px; font-weight: 550; font-family: Microsoft YaHei;">
+                FROM-GLC10_2017
+              </span>
+            </div>
+          </div>
+        </el-col>
+      </el-row>
+      <el-button slot="footer" type="primary" @click="computeButtonClick" :disabled="computeButtonDisabled">图计算获取</el-button>
+    </el-dialog>
+    <el-dialog title="图计算流" top="5vh" :visible.sync="dialogKgComputeVisible">
+      <div style="height: 600px">
+        <kgecharts :options="kgoptions3" :width="kgwidth" :height="kgheight" v-loading="loading"></kgecharts>
+      </div>
+      <el-button slot="footer" type="primary" @click="subComputeButtonClick" v-loading="loading">计算</el-button>
+    </el-dialog>
+    <el-dialog :title="errorDialogTitle" top="5vh" :visible.sync="dialogKgErrorVisible">
+      <div style="height: 600px">
+        <kgecharts :options="kgoptions4" :width="kgwidth" :height="kgheight" v-loading="loading"></kgecharts>
+        <span slot="footer">数据异常阈值参考：皮尔森相关系数(Ｒ) &lt; 60% 、 总体一致性系数(N) &lt; 60%、百分比不一致性(PD) &gt; 40%、 不同地类的一致性系数(Mi) &lt; 60%</span>
+      </div>
+    </el-dialog>
   </my-map>
 </template>
 
@@ -75,7 +277,7 @@
   import china from '$ui/charts/geo/china.json'
   import index from '../assets/id_index.json'
   import kgecharts from './kgecharts.vue'
-  import {options1, options2} from '../assets/js/utilkg'
+  import {options1, options2, optionsKgCompute, optionsErrorKg} from '../assets/js/utilkg'
   import axios from '$ui/utils/axios'
   import dataServerIp from '../assets/js/dataserverip'
   axios.defaults.baseURL = dataServerIp.dataServerIp
@@ -120,13 +322,27 @@
         // echarts知识图谱数据
         kgoptions1: options1,
         kgoptions2: options2,
+        kgoptions3: optionsKgCompute,
+        kgoptions4: optionsErrorKg,
         kgwidth: '100%',
         kgheight: '100%',
         kgIdList: new Set(),
         kgEdgeIdSet: new Set(),
         // 知识卡片数据
         nodecolumn: [],
-        nodedata: {}
+        nodedata: {},
+        dialogProductImgVisible: false,
+        imageFit: 'scale-down',
+        imageSrcList: [],
+        imageDownloadSrcList: [],
+        nodeId_imageName: '',
+        imageName: '',
+        dialogTitle: '产品影像图',
+        computeButtonDisabled: true,
+        dialogKgComputeVisible: false,
+        dialogKgErrorVisible: false,
+        loading: false,
+        errorDialogTitle: '异常数据检测'
       }
     },
     methods: {
@@ -301,6 +517,9 @@
       },
       // 知识图谱点击事件
       clickNode(nodeData) {
+        this.nodeId_imageName = nodeData.data.id
+        this.dialogTitle = nodeData.data.name + '产品影像图'
+        this.errorDialogTitle = nodeData.data.name + '异常数据检测'
         this.kgIdList.clear()
         this.kgEdgeIdSet.clear()
         this.getOneSubKgFromNodeId(this.kgoptions2, nodeData.data.id)
@@ -324,8 +543,9 @@
       },
       // 数据挖掘点击事件
       clickNode2(nodeData) {
+        this.nodeId_imageName = nodeData.data.id
+        this.dialogTitle = nodeData.data.name + '产品影像图'
         this.kgAddNodes(this.kgoptions2, nodeData.data.id)
-        console.log(nodeData)
         if (nodeData.dataType === 'node') {
           this.kgCardUpdate(nodeData.data.id)
             } else {
@@ -372,7 +592,147 @@
         .catch(function (error) {
           console.log(error);
         })
+      },
+      productImgShow() {
+        this.dialogProductImgVisible = true
+        axios.get('/guotu/kg/productLocationName', {
+              params: {
+                nodeid: this.nodeId_imageName
+              }
+              })
+              .then((response) => {
+                this.imageName = response.data.data
+                this.imageSrcList = [
+                dataServerIp.dataServerIp + '/guotu/kg/GLC1985/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC1990/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC1995/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC2000/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC2005/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC2010/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC2015/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC2020/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GlobaLand30_2000/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GlobaLand30_2010/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GlobaLand30_2020/' + response.data.data + '.png',
+                dataServerIp.dataServerIp + '/guotu/kg/GLC2017/' + response.data.data + '.png']
+                this.imageDownloadSrcList = [
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC1985/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC1990/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC1995/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC2000/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC2005/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC2010/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC2015/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC2020/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GlobaLand30_2000/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GlobaLand30_2010/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GlobaLand30_2020/' + response.data.data + '.tif',
+                dataServerIp.dataServerIp + '/guotu/kg/download/GLC2017/' + response.data.data + '.tif']
+              })
+              .catch(function (error) {
+                console.log(error);
+              })
+      },
+      downImg(index) {
+        const image = new Image();
+        image.setAttribute('crossOrigin', 'anonymous');
+        // bug：无法下载原始tif格式数据
+        // image.src = this.imageDownloadSrcList[index];
+        image.src = this.imageSrcList[index];
+        image.onload = () => {
+          const canvas = document.createElement('canvas');
+          canvas.width = image.width;
+          canvas.height = image.height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(image, 0, 0, image.width, image.height);
+          canvas.toBlob((blob) => {
+            const url = URL.createObjectURL(blob);
+            const Link = document.createElement('a');
+            Link.download = this.imageName;
+            Link.href = url;
+            Link.click();
+            Link.remove();
+            // 用完释放URL对象
+            URL.revokeObjectURL(url);
+          });
+      };
+      },
+      imageLoadError(e) {
+        
+        if(this.imageName.indexOf('country') !== -1 || this.imageName.indexOf('province') !== -1 || this.imageName.indexOf('city') !== -1) {
+          this.computeButtonDisabled = false
+        } else {
+          this.computeButtonDisabled = true
+        }
+      },
+      imageLoadSuccess(e) {
+        this.computeButtonDisabled = true
+      },
+      computeButtonClick() {
+        this.dialogProductImgVisible = false
+        this.dialogKgComputeVisible = true
+        this.loading = true
+        // 请求计算图
+        axios.get('/guotu/kg/computeKG', {
+        params: {
+          id: this.nodeId_imageName
+        }
+        })
+        .then((response) => {
+          this.kgoptions3.series[0].data = response.data.data
+          this.kgoptions3.series[0].links = response.data.links
+          this.loading = false
+          } 
+        )
+        .catch((error) => {
+          console.log(error);
+          this.loading = false
+        })
+      },
+      subComputeButtonClick() {
+        this.loading = true
+        // 图像拼接代码
+        axios.get('/guotu/kg/imageMosaic', {
+        params: {
+          id: this.nodeId_imageName
+        }
+        })
+        .then((response) => {
+          this.dialogKgComputeVisible = false;
+          // this.imageSrcList滞空，不然前后没变化，不会跟新视图
+          this.imageSrcList = []
+          this.productImgShow(); 
+          this.loading = false
+          } 
+        )
+        .catch((error) => {
+          console.log(error);
+          this.loading = false
+        })
+        // setTimeout(() => { this.dialogKgComputeVisible = false; this.productImgShow(); this.loading = false }, 3000)
+      },
+      kgErrorDialogShow() {
+        this.dialogKgErrorVisible = true
+        this.loading = true
+        // 请求异常检测数据图
+        axios.get('/guotu/kg/errorKG', {
+        params: {
+          id: this.nodeId_imageName
+        }
+        })
+        .then((response) => {
+          this.kgoptions4.series[0].data = response.data.data
+          this.kgoptions4.series[0].links = response.data.links
+          this.loading = false
+          } 
+        )
+        .catch((error) => {
+          console.log(error);
+          this.loading = false
+        })
       }
+    },
+    watch: {
     },
     created() {
       this.layers = this.createLayers()
@@ -414,5 +774,9 @@
   }
   .my-panel {
     margin-bottom: 2rem;
+  }
+  .el-image {
+    width: 200px; 
+    height: 200px;
   }
 </style>

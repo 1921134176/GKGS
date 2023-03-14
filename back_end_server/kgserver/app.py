@@ -17,6 +17,7 @@ import os
 import pandas as pd
 import json
 import geopandas as gpd
+import shutil
 from werkzeug.utils import redirect
 from .models import db, app, Casearth
 # 若运行当前的app.py则需要用from kgserver.models import app，因为当前运行会被认为是main module，无法找到相对路径
@@ -31,6 +32,10 @@ kgdb = kgcontrol.Kgdb("http://localhost:11005", 'neo4j', '201314')
 chatBot = ChatBotGraph("http://localhost:11005", 'neo4j', '201314')
 df = None
 
+if os.path.exists('F:\\Master graduation design\\webcode\\server\\kgserver\\static\\guotu_page_resize\\GLC1985\\武汉市-027-420100-city.png'):
+    for i in ['GLC1985', 'GLC1990', 'GLC1995', 'GLC2000', 'GLC2005', 'GLC2010', 'GLC2015', 'GLC2020',
+                       'GLC2017', 'GlobaLand30_2000', 'GlobaLand30_2010', 'GlobaLand30_2020']:
+        os.remove(f"F:\\Master graduation design\\webcode\\server\\kgserver\\static\\guotu_page_resize\\{i}\\武汉市-027-420100-city.png")
 
 # 前端检查的响应码
 # statusCode: {
@@ -539,6 +544,59 @@ def kgCardUpdate():
         return jsonify(data=data, column=column, code=200)
     except:
         return jsonify(data=data, column=column, code=200)
+
+
+# 国土页图片页面缩略图（原图的1/16）
+@app.route("/guotu/kg/<product>/<image>", methods=["get"])
+def guotuProductImage(product, image):
+    image = './static/guotu_page_resize/' + product + '/' + image
+    return send_file(image, mimetype='image/gif')
+
+
+# 国土页图片下载
+@app.route("/guotu/kg/download/<product>/<image>", methods=["get"])
+def guotuDownloadProductImage(product, image):
+    image = 'G:/投稿论文/code/data/ChineseLandcover/' + product + '/' + image
+    return send_file(image)
+
+
+# 国土页图片名获取
+@app.route("/guotu/kg/productLocationName", methods=["get"])
+def getProductLocationName():
+    node_id = request.args.get("nodeid")
+    nodeAlias = kgdb.getNodeAlias(node_id)
+    return jsonify(data=nodeAlias, code=200)
+
+
+# 国土页计算图数据获取
+@app.route("/guotu/kg/computeKG", methods=["get"])
+def getComputeKG():
+    node_id = request.args.get("id")
+    data, links = kgdb.getComputeKG(node_id)
+    return jsonify(data=data, links=links, code=200)
+
+
+# 国土页异常检测数据获取
+@app.route("/guotu/kg/errorKG", methods=["get"])
+def getErrorKG():
+    node_id = request.args.get("id")
+    data, links = kgdb.getErrorKG(node_id)
+    return jsonify(data=data, links=links, code=200)
+
+
+# 国土页图像拼接接口
+@app.route("/guotu/kg/imageMosaic", methods=["get"])
+def imageMosaic():
+    node_id = request.args.get("id")
+    nodeAlias = kgdb.getNodeAlias(node_id)
+    fromDir = 'F:\\Master graduation design\\webcode\\server\\kgserver\\static\\guotu_page_resize\\dataFromComputeKg\\'
+    productNameList = ['GLC1985', 'GLC1990', 'GLC1995', 'GLC2000', 'GLC2005', 'GLC2010', 'GLC2015', 'GLC2020',
+                       'GLC2017', 'GlobaLand30_2000', 'GlobaLand30_2010', 'GlobaLand30_2020']
+    for i in productNameList:
+        imagePath = f"{fromDir}{nodeAlias}_{i}.png"
+        toDir = f"F:\\Master graduation design\\webcode\\server\\kgserver\\static\\guotu_page_resize\\{i}\\{nodeAlias}.png"
+        shutil.copy(imagePath, toDir)
+    return jsonify(code=200)
 
 
 # @app.route("/", methods=["GET"])

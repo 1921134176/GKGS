@@ -46,6 +46,17 @@ class Kgdb:
                 f"match (n1:{label}) where n1.{key}='{value}' return n1.name as name, id(n1) as id, labels(n1)[0] as label").data()
         return {'id': str(kgdata[0]['id']), 'name': kgdata[0]['name'], 'category': CATEGORY_INDEX[kgdata[0]['label']]}
 
+    def getNodeAlias(self, nodeId):
+        """
+        获取节点别名
+        :param nodeId:
+        :return:
+        """
+        kgdata = self.g.run(f"match(n) where id(n)={nodeId} return n.alias as nodeAlias").data()
+        if len(kgdata) == 1:
+            return kgdata[0]['nodeAlias']
+        return ''
+
     def getNodeInformation(self, nodeid):
         """
         获取节点信息
@@ -674,6 +685,67 @@ class Kgdb:
                 {'id': str(item['id_tail']), 'name': item['value'], 'category': PRODUCT_CATEGORY_INDEX[item['label2']]})
             links.append({'source': str(item['id_head']), 'target': str(item['id_tail']),
                           'value': PRODUCT_CHINESE_NAME[item['label2']], 'id': str(item['r_id'])})
+        return [data, links]
+
+    def getComputeKG(self, nodeid):
+        """
+        计算图数据获取
+        :param nodeid:
+        :return:
+        """
+        data = []
+        nodeSet = set()
+        links = []
+        linkSet = set()
+        kgdata = self.g.run(
+            f"match path=(n1)-[*1..3]->(n2:district) where id(n1)={nodeid} return path ").data()
+        for value in kgdata:
+            path_nodes = value['path'].nodes
+            path_links = value['path'].relationships
+            for nodeValue in path_nodes:
+                if not nodeValue.identity in nodeSet:
+                    data.append({'id': str(nodeValue.identity), 'name': nodeValue['name'], 'category': CATEGORY_INDEX[str(nodeValue.labels).strip(':')]})
+                    nodeSet.add(nodeValue.identity)
+            for linkValue in path_links:
+                if not linkValue.identity in linkSet:
+                    links.append({'id': str(linkValue.identity), 'source': str(linkValue.start_node.identity), 'target': str(linkValue.end_node.identity), 'value': str(list(linkValue.types())[0])})
+                    linkSet.add(linkValue.identity)
+        return [data, links]
+
+    def getErrorKG(self, nodeid):
+        """
+        获取异常检测数据
+        :param nodeid:
+        :return:
+        """
+        data = []
+        nodeSet = set()
+        links = []
+        linkSet = set()
+        kgdata = self.g.run(f"match path=(n1)-[r1:Landcover_Dataset]->(n2)-[r2:compare_with]->(n3)-[r3]-(n4) "
+                            f"where r1.name in ['glc_2020_30m','GlobaLand30_2020'] "
+                            f"and id(n1)={nodeid} return n1, r1, n2, r2, n3, r3, n4").data()
+        for value in kgdata:
+            path_nodes = [value['n1'], value['n2'], value['n3'], value['n4']]
+            path_links = [value['r1'], value['r2'], value['r3']]
+            for nodeValue in path_nodes:
+                if not nodeValue.identity in nodeSet:
+                    if not str(nodeValue.labels).strip(':') in ['proxy', 'statistics']:
+                        data.append({'id': str(nodeValue.identity), 'name': nodeValue['name'],
+                                     'category': CATEGORY_INDEX[str(nodeValue.labels).strip(':')]})
+                    else:
+                        data.append({'id': str(nodeValue.identity), 'name': str(round(nodeValue['data'], 2)),
+                                     'des': nodeValue['name'], 'category': CATEGORY_INDEX[str(nodeValue.labels).strip(':')]})
+                    nodeSet.add(nodeValue.identity)
+            for linkValue in path_links:
+                if not linkValue.identity in linkSet:
+                    if str(list(linkValue.types())[0]) == 'compare_with':
+                        links.append({'id': str(linkValue.identity), 'source': str(linkValue.start_node.identity),
+                                      'target': str(linkValue.end_node.identity), 'value': linkValue['compare_dataset']})
+                    else:
+                        links.append({'id': str(linkValue.identity), 'source': str(linkValue.start_node.identity),
+                                      'target': str(linkValue.end_node.identity), 'value': linkValue['name']})
+                    linkSet.add(linkValue.identity)
         return [data, links]
 
 
