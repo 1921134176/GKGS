@@ -50,9 +50,9 @@ GKGS就是在这样的背景下所诞生的想法，研究希望构建一个具�
 
    ![平台领域共享](https://github.com/1921134176/GKGS/blob/master/img/平台领域共享.PNG)
    
-   ![平台领域共享](https://github.com/1921134176/GKGS/blob/master/img/数据获取.PNG)
+   ![数据获取](https://github.com/1921134176/GKGS/blob/master/img/数据获取.PNG)
    
-   ![平台领域共享](https://github.com/1921134176/GKGS/blob/master/img/异常数据检测.PNG)
+   ![异常数据检测](https://github.com/1921134176/GKGS/blob/master/img/异常数据检测.png)
 
 **安装与运行：**
 
